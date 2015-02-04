@@ -8,9 +8,9 @@ public class Elecciones {
         char opcion, opcion2;
 
         
-        Partido party = new Partido("","","");
+        Partido party = new Partido();
         Inmueble inmu = new Inmueble();
-        Habitante habi = new Habitante("","","",0,"");
+        Habitante habi = new Habitante();
         EspacioPublico espacio = new EspacioPublico();
         Ayuntamiento ayu = new Ayuntamiento();
 
