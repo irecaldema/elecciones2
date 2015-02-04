@@ -5,9 +5,9 @@ public class Inmueble{
     
     public Inmueble(){}
     
-    public Inmueble(String direccion,int num_personas){
+    public Inmueble(String direccion,int poblacion){
         this.direccion=direccion;
-        this.num_personas=num_personas;
+        this.poblacion=poblacion;
     }
     
     public void setDireccion(String direccion) {

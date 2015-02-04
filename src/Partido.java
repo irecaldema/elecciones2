@@ -5,12 +5,10 @@ public class Partido{
     
     public Partido(){}
     
-    public Partido(String nombre,String[] repres) {
+    /*public Partido(String nombre,String[] repres) {
         this.nombre=nombre;
         this.repres=repres.clone();
-    }
-    
-    public Partido(){}
+    }*/
     
     public Partido(String nombre, String siglas, String presi)    {
         this.nombre=nombre;
