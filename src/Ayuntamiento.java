@@ -5,27 +5,22 @@ public class Ayuntamiento{
     
     public Ayuntamiento(){};
     
-    public Ayuntamiento( String direccion, int poblacion)
-    {
+    public Ayuntamiento( String direccion, int poblacion) {
         this.direccion=direccion;
         this.poblacion=poblacion;
     }
     
-    public void setDireccion(String direccion)
-    {
+    public void setDireccion(String direccion) {
         this.direccion=direccion;
     }
-    public void setPoblacion(int poblacion)
-    {
+    public void setPoblacion(int poblacion) {
         this.poblacion=poblacion;
     }
     
-    public String getDireccion()
-    {
+    public String getDireccion() {
         return direccion;
     }
-    public int getPoblacion()
-    {
+    public int getPoblacion() {
         return poblacion;
     }
     

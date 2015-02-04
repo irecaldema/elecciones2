@@ -13,45 +13,35 @@ public class Habitante{
         this.direccion=direccion;
     }
     
-    public void setNombre(String nombre)
-    {
+    public void setNombre(String nombre) {
         this.nombre=nombre;
     }
-    public void setApellido1(String apellido1)
-    {
+    public void setApellido1(String apellido1) {
         this.apellido1=apellido1;
     }
-    public void setApellido2(String apellido2)
-    {
+    public void setApellido2(String apellido2) {
         this.apellido2=apellido2;
     }
-    public void setEdad(int edad)
-    {
+    public void setEdad(int edad) {
         this.edad=edad;
     }
-    public void setDireccion(String direccion)
-    {
+    public void setDireccion(String direccion) {
         this.direccion=direccion;
     } 
 
-    public String getNombre()
-    {
+    public String getNombre() {
         return nombre;
     }
-    public String getApellido1()
-    {
+    public String getApellido1(){
         return apellido1;
     }
-    public String getApellido2()
-    {
+    public String getApellido2(){
         return apellido2;
     }
-    public int getEdad()
-    {
+    public int getEdad() {
         return edad;
     }    
-    public String getDireccion()
-    {
+    public String getDireccion() {
         return direccion;
     } 
 }
