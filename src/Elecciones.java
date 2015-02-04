@@ -9,7 +9,16 @@ public class Elecciones {
         String nombre_hab, siglas, presi, nombre_rep, nombre_par, nombre_esp, direccion_hab, direccion_ayu, direccion_esp, direccion_inmu, apellido1, apellido2;
         /*String[] repres = new String[10];*/
         int edad, poblacion_ayu, poblacion_inmu;
-        char opcion, opcion2;
+        char opcion;
+        Scanner sc = new Scanner();
+        
+        System.out.println("  elige:");
+        System.out.println("1: gracias");
+        opcion = sc.next();
+        switch (opcion) {
+            case 1:
+                System.out.println("gracias");
+        }        
 
         FileReader fr = new FileReader("listadoPartidos.txt");
         BufferedReader br = new BufferedReader(fr); 
@@ -60,7 +69,6 @@ public class Elecciones {
 		}*/
          
         ArrayList <Partido> al_party = new ArrayList <Partido> ();
-        String zzz1="", zzz2="", zzz3=""; 
 
         while((s = br.readLine()) != null) 
         { 
