@@ -1,6 +1,6 @@
 import java.util.*;
 public class Partido{
-    String nombre, siglas, presi;
+    private String nombre, siglas, presi;
     /*String[] repres = new String[10];*/
     
     public Partido(){}

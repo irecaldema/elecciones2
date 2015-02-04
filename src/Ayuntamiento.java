@@ -1,7 +1,7 @@
 import java.util.*;
 public class Ayuntamiento{
-    String direccion;
-    int poblacion;
+    private String direccion;
+    private int poblacion;
     
     public Ayuntamiento(){};
     

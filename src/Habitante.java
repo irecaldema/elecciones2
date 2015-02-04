@@ -1,7 +1,7 @@
 import java.util.*;
 public class Habitante{
-    String nombre, apellido1, apellido2, direccion;
-    int edad;
+    private String nombre, apellido1, apellido2, direccion;
+    private int edad;
     
     public Habitante(){}
     

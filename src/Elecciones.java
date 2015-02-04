@@ -11,28 +11,6 @@ public class Elecciones {
         int edad, poblacion_ayu, poblacion_inmu;
         char opcion, opcion2;
 
-        Partido party = new Partido();
-        Inmueble inmu = new Inmueble();
-        Habitante habi = new Habitante();
-        EspacioPublico espacio = new EspacioPublico();
-        Ayuntamiento ayu = new Ayuntamiento();
-/*
-        System.out.println("\n Habitante");
-        System.out.println("\n nombre: " + nombre_hab + "\n apellido 1: " + apellido1 + "\n apellido 2: " + apellido2 + "\n direccion: " + direccion_hab + "\n edad: " + edad);
-        System.out.println();
-        
-        System.out.println("\n EspacioPublico");
-        System.out.println("\n nombre_esp: " + nombre_esp + "\n direccion: " + direccion_esp);
-        System.out.println();
-
-        System.out.println("\n Ayuntamiento");
-        System.out.println("\n direccion: " + direccion_ayu + "\n poblacion: " + poblacion_ayu); 
-        System.out.println();
-        
-        System.out.println();
-        System.out.println("\n Partidos que van a participar en las elecciones: ");
-*/
-        
         FileReader fr = new FileReader("listadoPartidos.txt");
         BufferedReader br = new BufferedReader(fr); 
         

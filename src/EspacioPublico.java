@@ -1,6 +1,6 @@
 import java.util.*;
 public class EspacioPublico{
-    String nombre, direccion;
+    private String nombre, direccion;
     
     public EspacioPublico(){}
     
