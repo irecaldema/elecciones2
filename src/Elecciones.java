@@ -45,9 +45,8 @@ public class Elecciones {
                                 System.out.println("    Capacidad: ");
                                 plaza.setCapacidad(sc.nextInt());
                                 
-                                System.out.println("\nEspacioPublico");
-                                System.out.println("Nombre: "+plaza.getNombre()+" Direccion: "+plaza.getDireccion()+" Capacidad: "+plaza.getCapacidad());
-                                
+                                plaza.mostrar();
+
                                 break;
                         }        
                         
