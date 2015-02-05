@@ -1,4 +1,3 @@
-import java.util.*;
 public class Ayuntamiento{
     private String direccion;
     private int poblacion;

@@ -1,5 +1,5 @@
-import java.util.*;
-public class EspacioPublico{
+public class EspacioPublico {
+    //propiedades de la clase principal
     private String nombre, direccion;
     
     public EspacioPublico(){}
@@ -9,6 +9,7 @@ public class EspacioPublico{
         this.direccion=direccion;
     }
     
+    //metodos de la clase principal
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
