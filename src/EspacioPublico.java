@@ -1,4 +1,4 @@
-public class EspacioPublico {
+abstract class EspacioPublico {
     //propiedades de la clase principal
     private String nombre, direccion;
     
@@ -22,5 +22,7 @@ public class EspacioPublico {
     }
     public String getDireccion(){
         return direccion;
-    }    
+    }
+    
+    abstract void mostrar();
 }

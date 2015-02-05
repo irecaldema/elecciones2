@@ -11,7 +11,7 @@ public class Plaza extends EspacioPublico {
         return capacidad;
      }    
     
-     public void mostrar() {
+     @Override public void mostrar() {
           System.out.println("\nPlaza");
           System.out.println("Nombre: "+getNombre()+" Direccion: "+getDireccion()+" Capacidad: "+getCapacidad());
      }                           
