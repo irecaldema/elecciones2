@@ -8,7 +8,7 @@ public class Elecciones {
         Scanner sc = new Scanner(System.in);
         do { 
             System.out.println();
-            System.out.println("*** SELECCIONE SU OPCIÓN ***");
+            System.out.println("***1 SELECCIONE SU OPCIÓN 1***");
             System.out.println("1: Partidos");
             System.out.println("2: Censo");
             System.out.println("3: EspacioPublico");
@@ -29,7 +29,7 @@ public class Elecciones {
                     break;
                 case 3:
                     do {
-                        System.out.println("*** SELECCIONE SU OPCIÓN ***");
+                        System.out.println("***2 SELECCIONE SU OPCIÓN 2***");
                         System.out.println("1: Plaza");
                         System.out.println("0: Salir");
                         opcion2 = sc.nextInt();
