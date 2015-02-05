@@ -1,6 +1,6 @@
-serpi,serpiente,cobra,18,calle_sin_salida
-mini_serpi,mini_serpiente,mini_cobra,16,calle sin salida
-senior_serpi,senior_serpiente,senior_cobra,45,calle sin salida
-serpi5,ser5piente,cobr5a,55,calle sin salida
-serp5i,serp5iente,co5bra,78,calle sin salida
-ser5pi,serpi5ente,co5bra,99,calle sin salida
+serpi,serpiente,cobra,18,calle_sin_salida,1
+mini_serpi,mini_serpiente,mini_cobra,45,calle sin salida,2
+senior_serpi,senior_serpiente,senior_cobra,45,calle sin salida,2
+serpi5,ser5piente,cobr5a,55,calle sin salida,1
+serp5i,serp5iente,co5bra,78,calle sin salida,1
+ser5pi,serpi5ente,co5bra,99,calle sin salida,1

@@ -4,17 +4,18 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.util.StringTokenizer;
 public class Habitante{
-    private String nombre, apellido1, apellido2, direccion;
+    private String nombre, apellido1, apellido2;
     private int edad;
+    private Inmueble inmueble;
     
     public Habitante(){}
     
-    public Habitante(String nombre, String apellido1, String apellido2, int edad, String direccion){
-        this.nombre=nombre;
-        this.apellido1=apellido1;
-        this.apellido2=apellido2;
-        this.edad=edad;
-        this.direccion=direccion;
+    public Habitante(String nombre, String apellido1, String apellido2, int edad, Inmueble inmueble){
+        setNombre(nombre);
+        setApellido1(apellido1);
+        setApellido2(apellido2);
+        setEdad(edad);
+        setInmueble(inmueble);
     }
     
     public void setNombre(String nombre) {
@@ -29,9 +30,9 @@ public class Habitante{
     public void setEdad(int edad) {
         this.edad=edad;
     }
-    public void setDireccion(String direccion) {
-        this.direccion=direccion;
-    } 
+    public void setInmueble(Inmueble inmueble) {
+        this.inmueble=inmueble;
+    }
 
     public String getNombre() {
         return nombre;
@@ -45,8 +46,8 @@ public class Habitante{
     public int getEdad() {
         return edad;
     }    
-    public String getDireccion() {
-        return direccion;
+    public Inmueble getInmueble() {
+        return inmueble;
     } 
     
     static public void mostrar() throws IOException {
@@ -61,12 +62,17 @@ public class Habitante{
             String[] separadas = s2.split(",");
             
             if (Integer.parseInt(separadas[3])>=18) {
-                al_habi.add(new Habitante(separadas[0],separadas[1],separadas[2],Integer.parseInt(separadas[3]),separadas[4]));
+                
+                al_habi.add(new Habitante(separadas[0],separadas[1],separadas[2],Integer.parseInt(separadas[3]),new Inmueble(separadas[4],Integer.parseInt(separadas[5]))));
             }
         }
         for(int i=0; i<al_habi.size(); i++) {
-			    System.out.println("  nombre: "+al_habi.get(i).getNombre() +" primer apellido: "+al_habi.get(i).getApellido1()+" segundo apellido: "+ al_habi.get(i).getApellido2()+" edad: "+ al_habi.get(i).getEdad()+" direccion: "+ al_habi.get(i).getDireccion());
-		}
+		    System.out.println("  nombre: "+al_habi.get(i).getNombre() +" primer apellido: "+al_habi.get(i).getApellido1()+" segundo apellido: "+ al_habi.get(i).getApellido2());
+	        System.out.print(" edad: "+ al_habi.get(i).getEdad());
+	        Inmueble inmueble = al_habi.get(i).getInmueble();
+	        System.out.print(" direccion: "+ inmueble.getDireccion());
+            System.out.print(" en la vivienda viven "+ inmueble.getPoblacion()+ "personas");
+        }
 
         // Vaciar el ArrayList
         al_habi.clear();
