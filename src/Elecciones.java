@@ -3,14 +3,15 @@ import java.io.IOException;
 public class Elecciones {
     public static void main (String args[]) throws IOException 	{
         
-        int opcion;
+        int opcion, opcion2;
+        
         Scanner sc = new Scanner(System.in);
         do { 
             System.out.println();
             System.out.println("*** SELECCIONE SU OPCIÓN ***");
             System.out.println("1: Partidos");
             System.out.println("2: Censo");
-            System.out.println("3: Plaza");
+            System.out.println("3: EspacioPublico");
             System.out.println("0: Salir");
             opcion = sc.nextInt();
             switch (opcion) {
@@ -27,21 +28,30 @@ public class Elecciones {
                     System.out.println();
                     break;
                 case 3:
-                    Plaza plaza = new Plaza();
-    
-                    System.out.println("EspacioPublico");
-                    System.out.println("    Nombre: ");
-                    String nombre=sc.next();
-                    plaza.setNombre(nombre);
-                    System.out.println("    Direccion: ");
-                    String direccion=sc.next();
-                    plaza.setDireccion(direccion);
-                    System.out.println("    Capacidad: ");
-                    int capacidad=sc.nextInt();
-                    plaza.setCapacidad(capacidad);
-                    
-                    System.out.println("\nEspacioPublico");
-                    System.out.println("Nombre: "+plaza.getNombre()+" Direccion: "+plaza.getDireccion()+" Capacidad: "+plaza.getCapacidad());
+                    do {
+                        System.out.println("*** SELECCIONE SU OPCIÓN ***");
+                        System.out.println("1: Plaza");
+                        System.out.println("0: Salir");
+                        opcion2 = sc.nextInt();
+                        switch (opcion2) {   
+                            case 1:    
+                                Plaza plaza = new Plaza();
+                
+                                System.out.println("EspacioPublico");
+                                System.out.println("    Nombre: ");
+                                plaza.setNombre(sc.next());
+                                System.out.println("    Direccion: ");
+                                plaza.setDireccion(sc.next());
+                                System.out.println("    Capacidad: ");
+                                plaza.setCapacidad(sc.nextInt());
+                                
+                                System.out.println("\nEspacioPublico");
+                                System.out.println("Nombre: "+plaza.getNombre()+" Direccion: "+plaza.getDireccion()+" Capacidad: "+plaza.getCapacidad());
+                                
+                                break;
+                        }        
+                        
+                    }while (opcion2!=0); 
             }
         }while (opcion!=0); 
         System.out.println("\n\nEGUN ONA IZAN!!\n");
